@@ -5,7 +5,7 @@ A lightweight, arcade-style survival game built entirely with vanilla HTML5 and 
 ## 🚀 Live Demo
 
 You can play the game instantly in your browser here:  
-👉 **[INSERT YOUR GITHUB PAGES LINK HERE]**
+👉 **https://bhabanadas.github.io/Square-Dodger-Game/**
 
 ---
 
