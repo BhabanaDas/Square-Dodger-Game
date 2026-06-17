@@ -2,7 +2,7 @@
 // TODO: Add high score saving later
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
-const scoreDisplay = document.getElemetById('score');
+const scoreDisplay = document.getElementById('score');
 //Game tweeks
 const PLAYER_SIZE = 30;
 const ENEMY_SIZE = 25;
