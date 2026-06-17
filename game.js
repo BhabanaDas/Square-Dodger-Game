@@ -2,7 +2,7 @@
 // TODO: Add high score saving later
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
-const scoreDisplay = document.getElemetById('score");
+const scoreDisplay = document.getElemetById('score');
 //Game tweeks
 const PLAYER_SIZE = 30;
 const ENEMY_SIZE = 25;
@@ -19,7 +19,7 @@ let enemies = [];
 //track mouse movemenet to slide player
 canvas.addEventListener('mousemove', (e) => {
  const rect = canvas.getBoundingClientRect();
- const mouseX = e.client - rect.left;
+ const mouseX = e.clientX - rect.left;
  //keep cursor in middle of box
  let newX = mouseX - (PLAYER_SIZE / 2);
  //stay inside canvas borders
@@ -48,7 +48,7 @@ function updateGame(){
  ctx.fillStyle = PLAYER_COLOR;
  ctx.fillRect(playerX, playerY, PLAYER_SIZE, PLAYER_SIZE);
  //2.move and draw enemies
- ctx.fillSyle = ENEMY_COLOR;
+ ctx.fillStyle = ENEMY_COLOR;
  //loop backwards so splicing doesn't break array indexes
  for(let i = enemies.length - 1; i>=0; i--){
   let enemy = enemies[i];
@@ -59,7 +59,7 @@ function updateGame(){
   if(playerX < enemy.x + ENEMY_SIZE &&
      playerX + PLAYER_SIZE > enemy.x &&
      playerY < enemy.y + ENEMY_SIZE &&
-     playerY + PLAYER_SIZE > enemy.y &&){
+     playerY + PLAYER_SIZE > enemy.y ){
    endGame();
    return;
   }
